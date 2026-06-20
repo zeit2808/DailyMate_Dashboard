@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --dm-bg: #f7f2ea;
+  --dm-card: #fffcf5;
+  --dm-text: #2c1a0e;
+  --dm-muted: #8b6e52;
+  --dm-primary: #d4622a;
+  --dm-accent: #f0a96b;
+  --dm-border: rgba(139, 94, 60, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--dm-bg);
+  color: var(--dm-text);
+  font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.dm-heading {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 800;
+}
+
+.dm-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.dm-logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.dm-card {
+  background: var(--dm-card);
+  border: 1px solid var(--dm-border);
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(44, 26, 14, 0.07);
+}
+
+.dm-header-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.dm-page-title {
+  margin: 20px 0px 0px;
+  color: var(--dm-text);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.dm-subtitle {
+  margin: -2px 0 0;
+  color: var(--dm-muted);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.dm-table-card .ant-table,
+.dm-table-card .ant-table-thead > tr > th,
+.dm-table-card .ant-table-tbody > tr > td {
+  background: transparent;
+}
+
+.dm-table-card .ant-table-thead > tr > th {
+  color: var(--dm-muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .dm-desktop-only {
+    display: none !important;
+  }
+}
